@@ -1,0 +1,6 @@
+package com.airhockey.android.programs;
+
+public class ColorShaderProgram {
+    private final int uMatrixLocaion;
+    
+}

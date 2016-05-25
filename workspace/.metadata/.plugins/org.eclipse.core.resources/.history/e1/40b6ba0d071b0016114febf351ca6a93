@@ -1,0 +1,22 @@
+package com.airhockey.android.programs;
+
+import static android.opengl.GLES20.*;
+import static android.opengl.Matrix.*;
+
+public class ColorShaderProgram {
+    private final int uMatrixLocation;
+    
+    private final int aPositionLocation;
+    private final int aColorLocation;
+    
+    public ColorShaderProgram(Context context) {
+        super(context, R.raw.simple_vertex_shader, 
+            R.raw.simple_fragment_shader);
+        
+        uMatrixLocation = glGetUniformLocation(program, U_MATRIX);
+        
+        aPositionLocation = glGetAttribLocation(program, A_POSITION);
+        
+        
+    }
+}
